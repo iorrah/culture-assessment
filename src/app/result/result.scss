@@ -1,0 +1,84 @@
+@import '../../styles/grid-measures';
+
+.result {
+  padding: 9rem 0 5rem;
+  background-color: #fff;
+
+  h1 { margin: 0 0 2rem; }
+  p { margin: 0 0 1.5rem; }
+
+  .picked-answers {
+    margin: 0 0 3rem;
+
+    .shower {
+      color: #2196f3;
+      cursor: pointer;
+
+      &:hover { color: #008fff; }
+    }
+
+    ul {
+      height: 0;
+      overflow: hidden;
+      transition: all .5s ease;
+      padding: 0;
+      opacity: 0;
+
+      &.opened {
+        height: auto;
+        overflow: visible;
+        opacity: 1;
+        padding: 0 0 3rem;
+      }
+
+      li {
+        list-style: none;
+        display: inline-block;
+        padding: .2rem .4rem;
+        cursor: default;
+        background-color: #eee;
+        border: .09rem solid #ddd;
+        border-radius: .09rem;
+        margin: 0 .3rem .25rem 0;
+        font-size: .7rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .result-chart {
+    width: 90% !important;
+    height: auto !important;
+    margin: 0 auto;
+
+    svg {
+      width: 100% !important;
+      height: auto !important;
+      position: relative;
+      top: -4rem;
+
+      tspan { font-size: .9rem; }
+    }
+  }
+}
+
+@media #{$gm-xs-md} {
+  .result {
+    padding: 8rem 0 5rem;
+
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 1.75rem;
+    }
+
+    p { font-size: .9rem; }
+
+    .result-chart {
+      width: 100% !important;
+
+      svg {
+        tspan { font-size: .75rem }
+      }
+    }
+  }
+}

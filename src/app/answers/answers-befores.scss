@@ -1,0 +1,19 @@
+@import '../../styles/mixins';
+
+.answers ul {
+  &:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: .1rem;
+    border: 0;
+  }
+
+  & {
+    &:before {
+      @include linear-background(#03001e,
+        (to right, #fb5f94, #ec38bc, #7303c0, #0bb3ff));
+    }
+  }
+}
