@@ -1,0 +1,10 @@
+a {
+  font-weight: inherit;
+
+  &,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $guaruja;
+  }
+}

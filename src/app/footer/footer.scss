@@ -1,0 +1,23 @@
+@import '../../styles/mixins.scss';
+
+footer {
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+  margin: 0;
+  border-top: .09rem solid #eaeaea;
+
+  .copyright {
+    color: inherit;
+    padding: 2rem 0;
+    margin: 0;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    font-size: .9rem;
+    background-color: #fff;
+    border: 0;
+  }
+
+  a { font-weight: inherit; }
+}

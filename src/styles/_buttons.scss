@@ -1,0 +1,38 @@
+.btn {
+  border: .12rem solid transparent;
+  border-radius: 3rem;
+  display: inline-block;
+  min-width: 7rem;
+  width: auto;
+  font-size: 1rem;
+  padding: .85rem 1.3rem .8rem;
+  background-color: #fff;
+  color: #333;
+  font-weight: 400;
+  line-height: normal;
+  transition: .5s ease;
+  cursor: pointer;
+  @include box-shadow((0 0 11px 0 rgba(0, 0, 0, .08),
+                       0 4px 15px 0 rgba(0, 0, 0, .1)));
+
+  &:hover,
+  &:focus,
+  &:visited {
+    background-color: #f9f9f9;
+    outline: none;
+    border-color: transparent;
+  }
+
+  &.btn-link {
+    box-shadow: none;
+    color: #2196f3;
+    padding: .1rem 0 .2rem;
+    background-color: transparent;
+    font-size: .95rem;
+
+    &:hover {
+      color: #008fff;
+      background-color: transparent;
+    }
+  }
+}
