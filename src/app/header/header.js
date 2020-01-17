@@ -43,7 +43,7 @@ class Header extends React.Component {
       <header>
         <div className="wrapper">
           <button className="logo">
-            Culture Assessment App
+            Culture Assessment
           </button>
 
           {canRenderRetakeButton ? (
