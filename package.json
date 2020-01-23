@@ -1,6 +1,6 @@
 {
   "name": "culture-assessment",
-  "homepage": "https://www.iorrah.com/culture-assessment",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
